@@ -148,6 +148,8 @@ nav ul li{
 }
 
 nav ul li a {
-	font-family: arial, helvetica;
-	font-size: 30px;
+	font-family: 'Merriweather',arial;
+  font-weight: regular;
+  font-style: italic;
+	font-size: 25px;
 }
