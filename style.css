@@ -152,6 +152,17 @@ section{
   padding-top: 20px;
     padding-bottom: 20px;
 }
+/*--------------contact----------*/
+
+#map {
+        height: 600px;
+        width: 100%;
+       }
+.contact-section {
+  margin-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 /*----------------header-----------*/
 header {
