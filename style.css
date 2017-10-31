@@ -164,6 +164,48 @@ section{
   padding-bottom: 30px;
 }
 
+/*-------------tickets---------------*/
+
+
+.tickets-section{
+  width: 100%;
+  padding: 200px 0px;
+  overflow: hidden;
+  background: url("tennis.jpg");
+  background-size: 100% auto;
+  background-position: 0 15%;
+
+}
+
+.tickets-log{
+  width: 49%;
+  float: left;
+  padding-left: 1%;
+}
+
+.tickets-log input{
+  width: 60%;
+  height: 30px;
+  padding: 0 1%;
+  border: none;
+  margin-bottom: 5px;
+  margin-left: 20%;
+}
+
+.tickets-log button{
+  width: 20%;
+  height: 30px;
+  display: block;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.tickets-log button:hover{
+  background-color: red;
+}
+
+
 /*----------------header-----------*/
 header {
 	width: 100%;
