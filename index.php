@@ -19,12 +19,20 @@ session_start();
 		<img src="tennisball.png" alt="">
 		<nav>
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="gallery.html">Gallery</a></li>
-					<li><a href="tickets.html">Tickets</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="gallery.php">Gallery</a></li>
+					<li><a href="tickets.php">Tickets</a></li>
+					<li><a href="contact.php">Contact</a></li>
 				</ul>
 		</nav>
+		<?php if (isset($_SESSION['u_id'])):
+			echo '<form class="signout-form" action="includes/signout.inc.php" method="POST">
+					<br>
+					<br>
+					<button type="submit" name="signout" >Sign out</button>
+			</form>'; ?>
+
+		<?php endif; ?>
 
 	</div>
 
@@ -89,6 +97,7 @@ session_start();
 
 </section>
 
+
 <section >
 	<div class="wrapper2" align="center">
 		<img src="tennis.jpg" alt="">
@@ -100,10 +109,10 @@ session_start();
 	<div class="wrapper">
 		<nav>
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="gallery.html">Gallery</a></li>
-					<li><a href="tickets.html">Tickets</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="gallery.php">Gallery</a></li>
+					<li><a href="tickets.php">Tickets</a></li>
+					<li><a href="contact.php">Contact</a></li>
 				</ul>
 		</nav>
 

@@ -13,17 +13,17 @@ if (isset($_POST['submit'])) {
   //Error handlers
   //Check for empty fields
   if(empty($firstname)||empty($lastname)||empty($uid)||empty($emailaddress)||empty($password)) {
-    header("Location: ../tickets.html?signup=empty");
+    header("Location: ../tickets.php?signup=empty");
     exit();
   } else {
     //Check if input characters are valid
     if(!preg_match("/^[a-zA-Z]*$/", $firstname) || !preg_match("/^[a-zA-Z]*$/", $lastname)){
-      header("Location: ../tickets.html?signup=invalid");
+      header("Location: ../tickets.php?signup=invalid");
       exit();
     }else{
       //check if email is valid
       if (!filter_var($emailaddress, FILTER_VALIDATE_EMAIL)) {
-        header("Location: ../tickets.html?signup=email");
+        header("Location: ../tickets.php?signup=email");
         exit();
       }else {
         //check if the username is taken
@@ -32,7 +32,7 @@ if (isset($_POST['submit'])) {
         $resultCheck = mysqli_num_rows($result);
 
         if ($resultCheck > 0) {
-          header("Location: ../tickets.html?signup=usertaken");
+          header("Location: ../tickets.php?signup=usertaken");
           exit();
         }else {
           //hashing the password
@@ -40,7 +40,7 @@ if (isset($_POST['submit'])) {
           //insert the user into the database
           $sql = "INSERT INTO users (user_first, user_last, user_email, user_uid, user_pwd) VALUES ('$firstname','$lastname','$emailaddress','$uid','$hashedPassword');";
           mysqli_query($conn,$sql);
-          header("Location: ../tickets.html?signup=success");
+          header("Location: ../tickets.php?signup=success");
           exit();
         }
       }
@@ -49,6 +49,6 @@ if (isset($_POST['submit'])) {
 
 
 }else{
-  header("Location: ../tickets.html");
+  header("Location: ../tickets.php");
   exit();
 }

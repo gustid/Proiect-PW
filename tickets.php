@@ -16,15 +16,26 @@ session_start();
 <body background="clay.jpg";>
 <header >
 	<div class="wrapper">
+
 		<img src="tennisball.png" alt="">
+
 		<nav>
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="gallery.html">Gallery</a></li>
-					<li><a href="tickets.html">Tickets</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="gallery.php">Gallery</a></li>
+					<li><a href="tickets.php">Tickets</a></li>
+					<li><a href="contact.php">Contact</a></li>
 				</ul>
 		</nav>
+		<?php if (isset($_SESSION['u_id'])):
+			echo '<form class="signout-form" action="includes/signout.inc.php" method="POST">
+					<br>
+					<br>
+					<br>
+					<button type="submit" name="signout" ><a>Sign out</a></button>
+			</form>'; ?>
+
+		<?php endif; ?>
 
 	</div>
 </header>
@@ -35,7 +46,7 @@ session_start();
 		<?php
 				if(isset($_SESSION['u_id']))
 				{
-					echo 'you are logged in';
+					
 				}else{
 					echo '<form class="tickets-log" action="includes/signin.inc.php" method="POST">
 						<br>
@@ -75,10 +86,10 @@ session_start();
 	<div class="wrapper">
 		<nav>
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="gallery.html">Gallery</a></li>
-					<li><a href="tickets.html">Tickets</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="gallery.php">Gallery</a></li>
+					<li><a href="tickets.php">Tickets</a></li>
+					<li><a href="contact.php">Contact</a></li>
 				</ul>
 		</nav>
 

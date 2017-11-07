@@ -169,6 +169,7 @@ section{
 
 .tickets-section{
   width: 100%;
+  height: 400px;
   padding: 200px 0px;
   overflow: hidden;
   background: url("tennis.jpg");
@@ -223,6 +224,33 @@ header div img{
 }
 
 
+.signout-form {
+  width: 49%;
+  padding-left: 1%;
+}
+
+.signout-form button {
+  width: 23%;
+  height: 40px;
+  display: block;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  background-color:rgb(191, 100, 35) ;
+}
+
+.signout-form button:hover{
+  background-color:rgb(255, 162, 2);
+}
+
+.signout-form button a {
+  font-family: 'Merriweather',arial;
+  font-weight: regular;
+  font-style: bold;
+	font-size: 20px;
+  color: white;
+}
+
 nav {
 	float: right;
 }
@@ -243,6 +271,8 @@ nav ul li a {
 	font-size: 20px;
   color: white;
 }
+
+
 /*--------------intro-------------------*/
 .section-intro
 {
