@@ -50,56 +50,142 @@ session_start();
 	</div>
 </section>
 
-<section class="index-news">
-	<div class="wrapper">
-
-		<article class="news-article">
-			<div class="news-img"></div>
-			<h3>Roger in Timisoara!</h3>
-			<p>Roger Federer is expected to make his debute at Narnia Bank Open on 32 of July.
-				This is tremendously good news for his fans all around Romania.</p>
-
-		</article>
-
-		<article class="news-article">
-			<div class="news-img"></div>
-			<h3>Roger in Timisoara!</h3>
-			<p>Roger Federer is expected to make his debute at Narnia Bank Open on 32 of July.
-				This is tremendously good news for his fans all around Romania.</p>
-
-		</article>
-		<article class="news-article">
-			<div class="news-img"></div>
-			<h3>Roger in Timisoara!</h3>
-			<p>Roger Federer is expected to make his debute at Narnia Bank Open on 32 of July.
-				This is tremendously good news for his fans all around Romania.</p>
-
-		</article>
-		<article class="news-article">
-			<div class="news-img"></div>
-			<h3>Roger in Timisoara!</h3>
-			<p>Roger Federer is expected to make his debute at Narnia Bank Open on 32 of July.
-				This is tremendously good news for his fans all around Romania.</p>
-
-		</article>
-		<article class="news-article">
-			<div class="news-img"></div>
-			<h3>Roger in Timisoara!</h3>
-			<p>Roger Federer is expected to make his debute at Narnia Bank Open on 32 of July.
-				This is tremendously good news for his fans all around Romania.</p>
-
-		</article>
 
 
+<section >
+
+	<br>
+	<div class="slideshow-containerr" style="background-color:rgba(255, 255, 255,0.9)">
+
+		<div class="mySlidess fade">
+
+			<div class="row">
+				<br>
+						<div class="column">
+							<div class="card" >
+								<img src="federer.png" alt="federer" style="width:100%">
+								<div class="container" style="align-content:center">
+									<h1 >Roger Federer</h1>
+									<p class="title">SUI</p>
+									<br>
+									<p ><button class="button" ><a style="color:white" href="http://www.atpworldtour.com/en/players/roger-federer/f324/overview">See more</a></button></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="column">
+							<div class="card">
+								<img src="nadal.png" alt="Mike" style="width:100%">
+								<div class="container">
+									<h1 >Rafael Nadal</h1>
+									<p class="title">ESP</p>
+									<br>
+									<p><button class="button"><a style="color:white" href="http://www.atpworldtour.com/en/players/rafael-nadal/n409/overview">See more</a></button></p>
+								</div>
+							</div>
+						</div>
+						<div class="column">
+							<div class="card">
+								<img src="thiem.png" alt="John" style="width:100%">
+								<div class="container">
+									<h1 >Dominic Thiem</h1>
+									<p class="title">AUT</p>
+									<br>
+									<p><button class="button"><a style="color:white" href="http://www.atpworldtour.com/en/players/dominic-thiem/tb69/overview">See more</a></button></p>
+								</div>
+							</div>
+						</div>
+						</div>
+				</div>
+
+				<div class="mySlidess fade">
+
+					<div class="row">
+						<br>
+								<div class="column">
+									<div class="card">
+										<img src="goffin.png" alt="Jane" style="width:100%">
+										<div class="container">
+											<h1 >David Goffin</h1>
+											<p class="title">BEL</p>
+											<br>
+											<p><button class="button"><a style="color:white" href="http://www.atpworldtour.com/en/players/david-goffin/gb88/overview">See more</a></button></p>
+										</div>
+									</div>
+								</div>
+
+								<div class="column">
+									<div class="card">
+										<img src="zverev.png" alt="Mike" style="width:100%">
+										<div class="container">
+											<h1 >Alexander Zverev</h1>
+											<p class="title">GER</p>
+											<br>
+											<p><button class="button"><a style="color:white" href="http://www.atpworldtour.com/en/players/alexander-zverev/z355/overview">See more</a></button></p>
+										</div>
+									</div>
+								</div>
+								<div class="column">
+									<div class="card">
+										<img src="pouille.png" alt="John" style="width:100%">
+										<div class="container">
+											<h1 >Lucas Pouille</h1>
+											<p class="title">FRA</p>
+											<br>
+											<p><button class="button"><a style="color:white" href="http://www.atpworldtour.com/en/players/lucas-pouille/pf39/overview">See more</a></button></p>
+										</div>
+									</div>
+								</div>
+								</div>
+						</div>
 
 
 	</div>
 
+
+
+		</div>
+
+<br>
+
+
+
+<script>
+var slideIndexx = 0;
+showSlidess();
+
+function showSlidess() {
+    var i;
+    var slides = document.getElementsByClassName("mySlidess");
+    //var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndexx++;
+    if (slideIndexx > slides.length) {slideIndexx = 1}
+    //for (i = 0; i < dots.length; i++) {
+    //    dots[i].className = dots[i].className.replace(" active", "");
+    //}
+    slides[slideIndexx-1].style.display = "block";
+    //dots[slideIndex-1].className += " active";
+    setTimeout(showSlidess, 4000); // Change image every 4 seconds
+}
+</script>
+
+<p style="font-family: 'Merriweather',arial;
+font-weight: regular;
+font-style: bold;
+font-size: 40px;
+color: white;
+text-align:center;
+text-shadow:2px 2px black">Meet the stars!</p>
+
+<br>
+
 </section>
 
-
 <section >
-	<div class="slideshow-container">
+	<div class="slideshow-container" >
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
@@ -147,7 +233,7 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 5000); // Change image every 2 seconds
+    setTimeout(showSlides, 6000); // Change image every 6 seconds
 }
 </script>
 
