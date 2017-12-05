@@ -43,11 +43,20 @@ session_start();
 
 <section class="section-galleria">
 
+		<h1 class="meet-the-stars">Gallery</h1>
+<br>
   <div class="wrapper">
     <div class="galleria">
                   <img src="tennis.jpg">
                   <img src="tennis2.jpg">
                   <img src="tennis3.jpg">
+									<img src="tennis4.jpg">
+                  <img src="tennis5.jpg">
+                  <img src="tennis6.jpg">
+									<img src="tennis7.jpg">
+									<img src="tennis8.jpg">
+									<img src="tennis9.jpg">
+									<img src="tennis10.jpg">
     </div>
     <script>
         (function() {

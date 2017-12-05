@@ -40,6 +40,33 @@ session_start();
 
 
 <section class="contact-section">
+	<h1 class="meet-the-stars">Contact</h1>
+
+	<div class="wrapper">
+		<p style="font-size=16px">
+			<strong style="font-weight=bold">Ticket-Info</strong>
+			<br>
+			Phone : 0723456161
+			<br>
+		</p>
+<br>
+		<p style="font-size=16px">
+			<strong style="font-weight=bold">Contact: tennis@timisoara.open</strong>
+			<br>
+			Suggestions, Inquiries, etc.
+			<br>
+		</p>
+		<br>
+		<p style="font-size=16px">
+			<strong style="font-weight=bold">Where will you find us?</strong>
+			<br>
+			Str. Păunescu Podeanu nr.2, Timisoara
+			<br>
+		</p>
+
+	</div>
+	<br>
+
 	<div id="map"></div>
     <script>
       function initMap() {

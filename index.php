@@ -52,6 +52,7 @@ session_start();
 
 
 
+
 <section >
 
 	<br>
@@ -172,16 +173,21 @@ function showSlidess() {
 }
 </script>
 
-<p style="font-family: 'Merriweather',arial;
-font-weight: regular;
-font-style: bold;
-font-size: 40px;
-color: white;
-text-align:center;
-text-shadow:2px 2px black">Meet the stars!</p>
+<p class="meet-the-stars">Meet the stars!</p>
 
 <br>
 
+</section>
+
+<section>
+	<br>
+	<br>
+	<div class="wrapper">
+		<h1 class="text-section">		Bank of Narnia Open is the main tennis tournament held in Romania. It is part of the official ATP callendar and supported by the International Tennis Federation.
+</h1>
+	</div>
+	<br>
+	<br>
 </section>
 
 <section >
@@ -239,6 +245,69 @@ function showSlides() {
 
 </section>
 
+
+<section>
+	<br>
+	<p class="meet-the-stars">Save the date!</p>
+	<br>
+	<div class="month">
+  <ul style="list-style-type: none">
+    <li class="prev">&#10094;</li>
+    <li class="next">&#10095;</li>
+    <li>
+      August<br>
+      <span style="font-size:18px">2017</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li><span class="active">8</span></li>
+  <li><span class="active">9</span></li>
+  <li><span class="active">10</span></li>
+  <li><span class="active">11</span></li>
+  <li><span class="active">12</span></li>
+  <li><span class="active">13</span></li>
+  <li><span class="active">14</span></li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  <li>31</li>
+</ul>
+
+<br>
+<br>
+</section>
 
 <footer>
 	<div class="wrapper">
